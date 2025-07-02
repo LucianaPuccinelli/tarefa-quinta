@@ -1,0 +1,36 @@
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 112rem;
+    padding: 2rem;
+    margin: 0 auto 2rem;
+}
+.top-nav-title a {
+    font-size: 2.4rem;
+    color: #d33c43;
+}
+.top-nav-title span {
+    color: #404041;
+}
+.top-nav-links a {
+    margin: 0 0.5rem;
+}
+.top-nav-title a,
+.top-nav-links a {
+    font-weight: bold;
+}
+
+.top-nav-links a{
+    font-size: 20px;
+    color: #ff1a00;
+    transition:all 0.2s linear;
+}
+
+.top-nav-links a:hover{
+    color: #000000;
+}
+
+.top-nav-links i {
+    margin-right: 5px;
+}

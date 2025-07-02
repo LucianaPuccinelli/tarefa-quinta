@@ -1,0 +1,53 @@
+.side-nav {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.side-nav .heading {
+    font-size: 20px;
+    color: #ff0000;
+    margin-bottom: 1rem;
+}
+
+.side-nav-item {
+    display: block;
+    color: #000000;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.side-nav a:hover{
+    background-color: #ff2b2b;
+    color: #ffffff;
+}
+
+.form.content {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form .legend {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+.form select {
+    width: 100%;
+    font-size: 14px;
+    color: #000000;
+    transition: border-color 0.3s ease;
+}
+
+.form input[type="text"]:focus, .form select:focus {
+    border-color: #ff8080;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+}

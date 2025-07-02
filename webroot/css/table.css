@@ -1,0 +1,43 @@
+.table-responsive {
+    margin-top: 20px;
+    overflow-x: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+thead th {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 2px solid #ff0000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody td {
+    border-bottom: 2px solid #a1a1a1;
+    padding: 12px 15px;
+}
+
+.actions a {
+    margin-left: 5px;
+    color: #ff0000;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.actions a:hover {
+    color: #000000;
+}
