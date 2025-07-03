@@ -25,6 +25,8 @@ class TarefaControllerTest extends TestCase
     {
         parent::setUp();
         $this->tarefasTable = TableRegistry::getTableLocator()->get('Tarefa');
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
         $this->session([
             'Auth' => [
                 'User' => [
