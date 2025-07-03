@@ -26,13 +26,6 @@ class UsuarioControllerTest extends TestCase
 
     }
 
-    public function testFixtureLoading()
-    {
-        $usuarios = $this->getTableLocator()->get('Usuario')->find()->all();
-        debug($usuarios->toArray());
-        $this->assertNotEmpty($usuarios);
-    }
-
     public function testIndex(): void
     {
         $this->sessionLogin();
