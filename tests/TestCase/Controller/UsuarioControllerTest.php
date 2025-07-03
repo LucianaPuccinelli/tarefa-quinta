@@ -23,7 +23,8 @@ class UsuarioControllerTest extends TestCase
     {
         parent::setUp();
         $this->usuariosTable = TableRegistry::getTableLocator()->get('Usuario');
-
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
     }
 
     public function testIndex(): void
@@ -125,8 +126,6 @@ class UsuarioControllerTest extends TestCase
 
     private function sessionLogin(): void
     {
-        $this->enableCsrfToken();
-        $this->enableSecurityToken();
         $this->session([
             'Auth' => [
                 'User' => [
