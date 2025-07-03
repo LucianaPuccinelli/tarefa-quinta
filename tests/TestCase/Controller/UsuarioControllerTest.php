@@ -44,8 +44,11 @@ class UsuarioControllerTest extends TestCase
             'cpf' => '12345678903',
             'telefone' => '11987654321',
             'data_nascimento' => '2000-01-01',
+            'created' => date('Y-m-d H:i:s'),
         ];
         $this->post('/usuario/add', $data);
+        debug($this->_getBodyAsString());
+        $this->assertEquals('teste', $this->_getBodyAsString());
 
         $usuario = $this->usuariosTable->find()->where(['email' => 'novo@teste.com'])->first();
         $this->assertNotEmpty($usuario);
