@@ -280,7 +280,7 @@ return [
             'driver' => Mysql::class,
             'persistent' => false,
             'timezone' => 'UTC',
-            'host' => 'localhost',
+            'host' => 'db',
             'username' => 'root',
             'password' => 'root',
             'database' => 'tarefa_quinta',
