@@ -47,8 +47,7 @@ class UsuarioControllerTest extends TestCase
             'created' => date('Y-m-d H:i:s'),
         ];
         $this->post('/usuario/add', $data);
-        debug($this->_getBodyAsString());
-        $this->assertEquals('teste', $this->_getBodyAsString());
+        $this->assertEquals('', $this->_getBodyAsString());
 
         $usuario = $this->usuariosTable->find()->where(['email' => 'novo@teste.com'])->first();
         $this->assertNotEmpty($usuario);
@@ -126,6 +125,8 @@ class UsuarioControllerTest extends TestCase
 
     private function sessionLogin(): void
     {
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
         $this->session([
             'Auth' => [
                 'User' => [
