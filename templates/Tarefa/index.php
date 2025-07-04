@@ -11,7 +11,7 @@
 <div class="filters">
     <div class="filter-item">
         <?= $this->Form->control('data_inicio', [
-            'label' => 'Data de criação',
+            'label' => 'Data de criação final',
             'type' => 'date',
             'value' => $this->request->getQuery('created'),
         ]) ?>
